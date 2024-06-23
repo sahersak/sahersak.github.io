@@ -1,0 +1,169 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #000000; /* Matching the title color */
+    margin: 0 1rem;
+}
+
+nav {
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Matching the title color */
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ /*center*/
+ .py  {
+padding: 10;
+text-align: center;
+ }
+/* Section Padding */
+.py {
+    padding: 2rem 2;
+    text-align-last: center;
+    
+}
+
+/* Services Section */
+.services {
+    background: #f9f9f9;
+}
+
+.section-head {
+    margin-bottom: 3rem;
+}
+
+.section-head h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-head p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.line-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.line-art div {
+    width: 50px;
+    height: 5px;
+    background: #333;
+    margin: 0 0.5rem;
+}
+
+.services-inner {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.service-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1  calc(20% - 3.5 rem);
+    text-align: center;
+    padding: center;
+}
+
+.service-item .icon {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Image Styles */
+.img {
+    text-align: center;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .services-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 2rem;
+    }
+}
+
